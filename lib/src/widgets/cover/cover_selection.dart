@@ -114,7 +114,7 @@ class _CoverSelectionState extends State<CoverSelection>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    final wrap = widget.wrap ?? Wrap();
+    final wrap = widget.wrap ?? const Wrap();
 
     return StreamBuilder<List<CoverData>>(
         stream: _stream,
