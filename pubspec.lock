@@ -41,14 +41,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
-  cross_file:
-    dependency: transitive
-    description:
-      name: cross_file
-      sha256: "55d7b444feb71301ef6b8838dbc1ae02e63dd48c8773f3810ff53bb1e2945b32"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.3.4+1"
   csslib:
     dependency: transitive
     description:
@@ -96,14 +88,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  get_thumbnail_video:
-    dependency: "direct main"
-    description:
-      name: get_thumbnail_video
-      sha256: "22058c1055dbcdcbaee4f80d52197deeb83fd04ae78839e9a656a5bfb58ed95a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.6.1"
   html:
     dependency: transitive
     description:
@@ -349,6 +333,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.0"
+  video_thumbnail:
+    dependency: "direct main"
+    description:
+      name: video_thumbnail
+      sha256: "3455c189d3f0bb4e3fc2236475aa84fe598b9b2d0e08f43b9761f5bc44210016"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.3"
   vm_service:
     dependency: transitive
     description:

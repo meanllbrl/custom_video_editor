@@ -3,12 +3,11 @@
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
-import 'package:get_thumbnail_video/index.dart';
-import 'package:get_thumbnail_video/video_thumbnail.dart';
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
 import 'package:video_editor/src/controller.dart';
 import 'package:video_editor/src/models/file_format.dart';
+import 'package:video_thumbnail/video_thumbnail.dart';
 
 class FFmpegVideoEditorExecute {
   const FFmpegVideoEditorExecute({
@@ -227,7 +226,7 @@ class CoverFFmpegVideoEditorConfig extends FFmpegVideoEditorConfig {
   /// Generate this selected cover image as a JPEG [File]
   ///
   /// If this controller's [selectedCoverVal] is `null`, then it return the first frame of this video.
-  Future<XFile?> _generateCoverFile() async => VideoThumbnail.thumbnailFile(
+  Future<String?> _generateCoverFile() async => VideoThumbnail.thumbnailFile(
         imageFormat: ImageFormat.JPEG,
         thumbnailPath: (await getTemporaryDirectory()).path,
         video: controller.file.path,
@@ -242,7 +241,7 @@ class CoverFFmpegVideoEditorConfig extends FFmpegVideoEditorConfig {
   @override
   Future<FFmpegVideoEditorExecute?> getExecuteConfig() async {
     // file generated from the thumbnail library or video source
-    final String? coverPath = (await _generateCoverFile())?.path;
+    final String? coverPath = (await _generateCoverFile());
     if (coverPath == null) {
       debugPrint('VideoThumbnail library error while exporting the cover');
       return null;

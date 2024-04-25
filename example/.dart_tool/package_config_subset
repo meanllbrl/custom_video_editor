@@ -70,10 +70,6 @@ fraction
 2.18
 file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/fraction-4.1.4/
 file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/fraction-4.1.4/lib/
-get_thumbnail_video
-3.0
-file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/get_thumbnail_video-0.6.1/
-file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/get_thumbnail_video-0.6.1/lib/
 html
 2.19
 file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/html-0.15.4/
@@ -242,6 +238,10 @@ video_player_web
 3.3
 file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/video_player_web-2.3.0/
 file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/video_player_web-2.3.0/lib/
+video_thumbnail
+2.16
+file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/video_thumbnail-0.5.3/
+file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/video_thumbnail-0.5.3/lib/
 vm_service
 3.0
 file:///Users/mehmetnuraydin/.pub-cache/hosted/pub.dev/vm_service-13.0.0/
